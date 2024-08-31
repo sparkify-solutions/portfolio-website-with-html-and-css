@@ -1,0 +1,503 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --first-bg-color:#303030;
+    --second-bg-color:#2c2c2c;
+    --first-text-color:#ffffff;
+    --second-text-color:#b6b6b6;
+    --main-color:#00b135;
+    --large-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body
+{
+    background:var(--first-bg-color);
+    color: var(--first-text-color);
+}
+header
+{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo
+{
+    color: var(--first-text-color);
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+span
+{
+    color: var(--main-color);
+}
+.navlist
+{
+    display: flex;
+}
+.navlist a
+{
+    color: var(--second-text-color);
+    font-size: 18px;
+    margin: 0 25px;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+.navlist a:hover 
+{
+    color: var(--main-color);
+}
+#menu-icon
+{
+    font-size: 33px;
+    color:var(--first-text-color);
+    z-index: 1000;
+    margin-left: 25px;
+    display: none;
+}
+section
+{
+    padding: 0px 160px 20px 125px ;
+}
+.home
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.slide
+{
+    margin-bottom: 18px;
+}
+.one
+{
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 18px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--first-text-color);
+}
+.two
+{
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.home-text h1
+{
+    font-size: var(--large-font);
+    font-weight: 700;
+    color: var(--first-text-color);
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+.home-text h3
+{
+    color: var(--first-text-color);
+    margin: 0  0 22px;
+    font-size: 2rem;
+}
+.home-text p
+{
+    color: var(--second-text-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+}
+.button
+{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn 
+{
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    background: var(--main-color);
+    color: var(--first-text-color);
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+.btn:hover
+{
+    transform: scale(0.9);
+}
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img
+{
+    margin-top: 50px;
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+.about-text h2
+{
+    font-size: var(--h2-font);
+    line-height: 1.3;
+}
+.about-text h4
+{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--first-text-color);
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin:25px 0 30px 0px;
+}
+.about-text p
+{
+    color: var(--second-text-color);
+    font-size: var(--p-font);
+    line-height: 1.4;
+    margin: 25px 0 30px 0;
+}
+.Services
+{
+    background: var(--second-bg-color);
+    padding-top: 50px;
+}
+.main-text h2
+{
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+}
+.main-text
+{
+    text-align: center;
+}
+.main-text p
+{
+    color: var(--second-text-color);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.services-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px , auto));
+    align-items: center;
+    gap: 2.5rem;
+}
+.box 
+{
+    background: var(--first-bg-color);
+    padding: 35px 45px;
+    transition: all .5s ease;
+}
+.services-icons i
+{
+    font-size: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+}
+.box h3
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--first-text-color);
+    margin-bottom: 15px;
+}
+.box p
+{
+    color: var(--second-text-color);
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.box:hover
+{
+    transform: translateY(-10px);
+}
+.portfolio .main-text
+{
+    margin-top: 30px;
+}
+.portfolio-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+.row
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.row img
+{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6) , #08f800);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 45px;
+    transition: height 0.5s;
+}
+.layer h4
+{
+    font: 25px;
+    font-weight: 600;
+    margin:5px 0 5px 0;
+}
+.layer p
+{
+    color: var(--first-text-color);
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.layer i
+{
+    color: var(--first-text-color);
+    margin: 5px 0 5px 0;
+    font-size: 25px;
+    background: var(--first-bg-color);
+    border-radius: 5px;
+}
+.row:hover img
+{
+    transform: scale(1.1);
+}
+.row:hover .layer
+{
+    height: 110px;
+}
+.contact
+{
+    background:var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+.contact-text h2
+{
+    font-size: var(--h2-font);
+}
+.contact-text h4
+{
+    color: var(--first-text-color);
+    margin: 20px 0;
+    font-size: 20px;
+}
+.list 
+{
+    margin-bottom: 2.5rem;
+}
+.list li
+{
+    margin-bottom: 15px;
+}
+.list li a
+{
+    display: block;
+    color: var(--second-text-color);
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+.list li a:hover 
+{
+    color: var(--first-text-color);
+    transform: translateY(5px);
+}
+.contact-icons i
+{
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--first-text-color);
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin-right: 10px;
+}
+.contact-icons i:hover 
+{
+    color: var(--second-text-color);
+    transform: translateY(-5px);
+}
+.contact-form form
+{
+    position: relative;
+}
+.contact-form form input,textarea
+{
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    display: block;
+    margin-bottom: 10px;
+    background: var(--first-bg-color);
+    color: var(--first-text-color);
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.contact-form textarea
+{
+    resize: none;
+    height: 200px;
+}
+.contact-form .submit
+{
+    width: 160px;
+    background-color: var(--main-color);
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.contact-form .submit:hover
+{
+    transform: scale(1.1);
+}
+@media (max-width:1480px)
+{
+    header
+    {
+        padding: 12px 2.5%;
+        transition: 0.1s;
+    }
+    selection
+    {
+        padding: 110px 3% 60px;
+    }
+}
+@media (max-width:1100px)
+{
+    :root 
+    {
+        --large-font:5rem;
+        --h2-font:2.5rem;
+        --p-font:1rem;
+        transition: 0.1s;
+    }
+    .home-text h3 
+    {
+        font-size: 2.5rem;
+    }
+    .home 
+    {
+        height:85vh;
+    }
+}
+@media (max-width:920px)
+{
+    .about
+    {
+        grid-template-columns: 1fr;
+    }
+    .about-img img 
+    {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .contact
+    {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:750px)
+{
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu-icon
+    {
+        display: block;
+    }
+    .navlist
+    {
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+    }
+    section 
+    {
+        margin-top: 60px;
+    }
+    .main-text
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+}
+@media (max-width:550px)
+{
+    .portfolio-content .row
+    {
+        margin-right: 85px;
+        transition: 0.6s;
+    }
+
+    .row:hover .layer
+    {
+    height: 100%;
+    }
+}
